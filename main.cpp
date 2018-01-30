@@ -2,23 +2,13 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include "stat_hpp"
 
 #define MAX_DAYS          365
 #define MAX_STATS         100
 #define MAX_STATION_COUNT 20
 
-class Stat {
-	private:
-		std::string _time;
-		float _precipitationQgag;  // Precipitation volume in 1/100th of (cubic?) inch
-		float _precipitationQpcp;  // Precipitation amount in 1/100th of inch
 
-	public:
-		Stat(std::string time, std::string qgag, std::string cpcp);
-		std::string getTime() { return _time; }
-		float getPrecipitationQgag() { return _precipitationQgag; }
-		float getPrecipitationQpcp() { return _precipitationQpcp; }
-};
 
 class Day {
 	private:
@@ -69,16 +59,7 @@ class Station {
 		Day* addDay(std::string& date);
 };
 
-Stat::Stat(std::string time, std::string qgag, std::string qpcp) {
-	_time = time;
-	_precipitationQgag = stof(qgag);
-	if (_precipitationQgag<= -9999 || _precipitationQgag >= 999)
-		_precipitationQgag = 0;
 
-	_precipitationQpcp = stof(qpcp);
-	if (_precipitationQpcp<= -9999 || _precipitationQpcp >= 999)
-		_precipitationQpcp = 0;
-}
 
 Day* Station::getDayNext() {
 	Day* day = nullptr;

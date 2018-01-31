@@ -2,8 +2,8 @@
 #define day_hpp
 #include <string>
 #define MAX_STATS         100
-
-
+#include "stat.hpp"
+#include "analyzer.hpp"
 class Day {
 	private:
 		std::string         _date;

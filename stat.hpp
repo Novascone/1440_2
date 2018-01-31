@@ -1,7 +1,7 @@
 #ifndef stat_hpp
 #define stat_hpp
 #include <string>
-#include "analyzer.hpp"
+#include <iostream>
 
 class Stat {
 	private:

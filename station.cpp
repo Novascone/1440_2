@@ -1,9 +1,8 @@
-#include "stat.hpp"
-#include "day.hpp"
+
 #include "station.hpp"
 #include <iostream>
 #include <string>
-#include "split.hpp"
+
 
 
 Day* Station::getDayNext() {

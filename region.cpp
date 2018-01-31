@@ -1,5 +1,6 @@
 
 #include "region.hpp"
+#include <iostream>
 void Region::load(std::ifstream &input) {
 	if (!input.is_open()) {
 		std::cout << "Input file is not open" << std::endl;

@@ -1,11 +1,12 @@
 #ifndef station_hpp
 #define station_hpp
 #include <iostream>
+#include <fstream>
+#include <sstream>
 #define MAX_DAYS          365
-#define MAX_STATS         100
-#define MAX_STATION_COUNT 20
+#include "split.hpp"
 #include "day.hpp"
-#include "stat.hpp"
+
 
 
 class Station {

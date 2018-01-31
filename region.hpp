@@ -2,13 +2,15 @@
 #define region_hpp
 #include <string>
 #define MAX_STATS         100
+#define MAX_STATION_COUNT 20
 #include <fstream>
 #include <iostream>
 #include "station.hpp"
+#include "day.hpp"
 #include "split.hpp"
 #include <sstream>
-#include <string>
-#include "analyzer.hpp"
+
+
 
 
 
